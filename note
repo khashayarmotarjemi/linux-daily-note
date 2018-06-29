@@ -1,0 +1,9 @@
+#! /usr/bin/python3
+
+import datetime
+import sys, os
+
+
+today = str(datetime.datetime.now().date())
+
+os.system("nano ../" + today)
