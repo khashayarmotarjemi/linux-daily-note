@@ -6,4 +6,4 @@ import sys, os
 
 today = str(datetime.datetime.now().date())
 
-os.system("nano ../" + today)
+os.system("sudo nano ../" + today)

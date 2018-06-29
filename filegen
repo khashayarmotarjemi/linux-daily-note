@@ -4,27 +4,13 @@ from os import listdir
 from os.path import isfile, join
 import datetime
 
-# file = open("temp", "r") 
-# cnum = int(file.read())
-# print(cnum)
-# file.close()
-
 today = str(datetime.datetime.now().date())
 
 # getting all file names
-mypath = "../"
+mypath = "/home/khashayar/Documents/notes/"
 dates = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 
 if (today not in dates):
-	new_note = open('../' + today,"w")
+	new_note = open('/home/khashayar/Documents/notes/' + today,"w")
 	new_note.write(today + "\n..........\n")
 	new_note.close()
-
-print(dates)
-
-
-# file = open("temp","w")
-# file.truncate(0)
-# inc = cnum + 1
-# file.write(str('{}'.format(inc)))
-# file.close()
